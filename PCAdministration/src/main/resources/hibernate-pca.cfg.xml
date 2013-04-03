@@ -1,0 +1,29 @@
+<!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by Ralf Straub (Endress+Hauser InfoServe GmbH + Co.KG) -->
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+<session-factory>
+	<property name="dialect">com.endress.infoserve.persistence.hibernate.dialect.TableHiloDerbyDialect</property>
+	<!-- mapping files -->
+	<property name="show_sql">true</property>
+
+	<!-- no batch update -->
+	<property name="jdbc.batch_size">0</property>
+	<property name="jdbc.use_scrollable_resultsets">false</property>
+	<!-- mapping files -->
+	<property name="autocommit">false</property>
+<!-- 
+    <property name="hbm2ddl.auto">update</property>
+-->
+	<property name="connection.datasource">java:comp/env/jdbc/wam</property>
+	
+		<!--Test Test  -->
+	<mapping class="com.endress.infoserve.test.pca.impl.Role"/>
+	<mapping class="com.endress.infoserve.test.pca.impl.User"/>
+	<mapping class="com.endress.infoserve.test.pca.impl.PC"/>
+	<mapping class="com.endress.infoserve.test.pca.impl.Resource"/>
+	<mapping class="com.endress.infoserve.test.pca.impl.Permission"/>
+	<mapping class="com.endress.infoserve.test.pca.impl.UserResourcePermission"/>
+	
+</session-factory>
+</hibernate-configuration>
