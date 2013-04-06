@@ -10,23 +10,13 @@ public class TestClass {
 	//Neuer Commit
 	
 	//alles neu
-}
+
 // commit wAR SCHEIT
 	
 	//Neuer Commit
 	
 	//alles neu
-}
-// commit wAR SCHEIT
-	
-	//Neuer Commit
-	
-	//alles neu
-	
-	//Neuer Commit
-	
-	//alles neu
-}
+
 // commit wAR SCHEIT
 	
 	//Neuer Commit
@@ -36,7 +26,17 @@ public class TestClass {
 	//Neuer Commit
 	
 	//alles neu
-}
+
+// commit wAR SCHEIT
+	
+	//Neuer Commit
+	
+	//alles neu
+	
+	//Neuer Commit
+	
+	//alles neu
+
 	//Neuer Commit
 	
 	//alles neu
