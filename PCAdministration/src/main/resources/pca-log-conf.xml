@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration>
+    <!-- *************** APPENDER *************** -->
+    <!--  Initialization over Log4jInit defined in web.xml -->
+    <!-- In Enterprise the log configuration is loaded by JNDI basedir variable, i.e. conf-dir
+    of tomcat installation. 
+    This file is loaded by Hosting over classpath, because there is no log4j-config file in basedir.  -->
+    <appender name="file" class="org.apache.log4j.DailyRollingFileAppender">
+        <param name="File" value="${TCLOGDIR}/pca/pca.log"/>
+        <param name="DatePattern" value="'.'yyyy-MM-dd"/>
+        <param name="Append" value="true"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss,SSS} %-5p [%c{1}] - %m%n"/>
+        </layout>
+    </appender>  
+<!--     *************** LOGGER *************** -->
+    <logger name="org.hibernate" additivity="false">
+        <level value="info"/>
+        <appender-ref ref="file"/>
+    </logger>
+    <logger name="org.hibernate.SQL" additivity="false">
+        <level value="debug"/>
+        <appender-ref ref="file"/>
+    </logger>
+    <logger name="org.hibernate.tool.hbm2ddl" additivity="false">
+        <level value="debug"/>
+        <appender-ref ref="file"/>
+    </logger>
+    <logger name="org.apache" additivity="false">
+        <level value="info"/>
+        <appender-ref ref="file"/>
+    </logger>
+    <logger name="org.directwebremoting.impl.DefaultRemoter" additivity="false">
+        <level value="info"/>
+        <appender-ref ref="file"/>
+    </logger>
+    <root>
+        <priority value="info"/>
+        <appender-ref ref="file"/>
+    </root>
+</log4j:configuration>

@@ -1,0 +1,17 @@
+.diff-new{
+	font-style: italic;
+	background-color: silver;
+}
+.diff-delete{
+	font-style: italic;
+	text-decoration: line-through;
+}
+.diff-new2{
+	font-style: italic;
+	background-color: lime;
+}
+.diff-delete2{
+	font-style: italic;
+	background-color: pink ;
+	text-decoration: line-through;
+}
