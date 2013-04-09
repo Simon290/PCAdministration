@@ -1,6 +1,0 @@
-<Context path="/PCAdministration" docBase="${catalina.home}/webapps/PCAdministration"
-	debug="5" reloadable="false" crossContext="true">
-	<Manager pathname=""/>
-	<ResourceLink name="jdbc/wam" global="jdbc/wam" type="javax.sql.DataSource" />
-	<ResourceLink name="hibernateDialect-wam" global="hibernateDialect-wam" type="java.lang.String" />
-</Context>
