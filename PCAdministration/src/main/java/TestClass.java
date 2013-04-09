@@ -9,5 +9,6 @@ public class TestClass {
 		}
 		
 		// das ist ein neuer Kommentar
+		// das sollte jetzt nicht funktionieren
 	}
 }
